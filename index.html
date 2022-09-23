@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Todos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/4f41a0a284.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <header class="text-center text-light my-4">
+            
+            <h1 class="mb-4">Todo list <i class="fa-solid fa-clipboard-check"></i></h1>
+            <form class="search">
+                <h5><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></h5>
+                <input type="text" class="form-control m-auto rounded-pill" name="search" placeholder="search todos">
+            </form>
+        </header>
+
+        <ul class="list-group todos mx-auto text-light">
+            <li class="list-group-item d-flex justify-content-between align-item-center">
+                <span>Wash the dishes</span>
+                <i class="fa-solid fa-circle-minus delete"></i>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-item-center">
+                <span>Buy groceries</span>
+                <i class="fa-solid fa-circle-minus delete"></i>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-item-center">
+                <span>Take the dog out</span>
+                <i class="fa-solid fa-circle-minus delete"></i>
+            </li>
+        </ul>
+
+        <form class="add text-center my-4">
+            <label class="text-light">Add an new todo here</label>
+            <h5><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></h5>
+            <input type="text" class="form-control m-auto rounded-pill" name="add">
+        </form>
+    </div>
+
+    <script src='app.js'></script>
+</body>
+</html>
